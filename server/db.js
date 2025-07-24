@@ -1,6 +1,6 @@
 import mysql from "mysql2";
 const db = mysql.createConnection({
-  host: "localhost",
+  host: "https://employee-management-system-k6a4.vercel.app/",
   user: "root",
   password: "Aswin@123", 
   database: "aswin",
