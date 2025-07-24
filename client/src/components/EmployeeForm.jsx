@@ -13,7 +13,7 @@ const EmployeeForm = ({ fetchEmployees, editingEmp, setEditingEmp }) => {
   useEffect(() => {
     if (editingEmp) {
       setForm({ ...editingEmp, existingPhoto: editingEmp.photo });
-      setPreview(`employee-management-system-three-green.vercel.app
+      setPreview(`https://employee-management-system-three-green.vercel.app/
 ${editingEmp.photo}`);
     }
   }, [editingEmp]);
@@ -34,10 +34,10 @@ ${editingEmp.photo}`);
 
     try {
       if (editingEmp) {
-        await axios.put(`employee-management-system-three-green.vercel.app
+        await axios.put(`https://employee-management-system-three-green.vercel.app/
 ${editingEmp.id}`, data);
       } else {
-        await axios.post("employee-management-system-three-green.vercel.app"
+        await axios.post("https://employee-management-system-three-green.vercel.app/"
 , data);
       }
       fetchEmployees();
