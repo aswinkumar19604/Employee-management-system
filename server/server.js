@@ -6,7 +6,7 @@ import employeeRoutes from "./routes/employees.js";
 
 const app = express();
 app.use(cors({
-  origin: "https://employee-management-system-k6a4.vercel.app"
+  origin: "https://employee-management-system-k6a4.vercel.app/"
 }));
 app.use(express.json());
 const __filename = fileURLToPath(import.meta.url);
