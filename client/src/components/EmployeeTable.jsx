@@ -4,7 +4,8 @@ import "../styles/EmployeeTable.css";
 const EmployeeTable = ({ employees, setEditingEmp, fetchEmployees }) => {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure?")) {
-      await axios.delete(`http://localhost:5000/api/employees/${id}`);
+      await axios.delete(`employee-management-system-three-green.vercel.app
+${id}`);
       fetchEmployees();
     }
   };
